@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Add Author</title>
+    <link rel="stylesheet" href="table.css">
+    <link rel="icon" href="icon.png" >
+    <style>
+        td {
+          text-align: left;  
+        }
+    </style>
+</head>
+<body>
+    <script src="Addauthor.js"></script>
+    <div class="Card"><br />
+        <h3>Add Author</h3>          
+            <table>  
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="Aname" id="Aname" onkeypress="return isAlphabet(event)" /></td>
+                </tr>
+                <tr>
+                    <td>Photo :</td>
+                    <td><input type="file" name="Aimg" id="Aimg" /></td>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="DOB" id="DOB" onchange="calculateAge(this.value)" /></td>
+                </tr> 
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="Age" id="Age" max="100" min="0" disabled /></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" value="M" name='gender' id='male' />
+                        <label for="male">Male</label>
+                        <input type="radio" value="F" name='gender' id='female' />
+                        <label for="female">Female</label>
+                        <input type="radio" id="Other" name="gender" value="O"> 
+                        <label for="Other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Specialized in</td>
+                    <td><input type="string" name="Spec" id="Spec"  /></td>
+                </tr>
+                <tr>
+                    <td>Profession</td>
+                    <td><input type="string" name="Post" id="Post" onkeypress="return isAlphabet(event)"/></td>
+                </tr>
+                <tr >
+                    <td>Phone Number</td>
+                    <td><input type="number" name="Contact" id="Contact" onkeypress="return isNumber(event)"/></td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><input type="text" name="City" id="City" onkeypress="return isAlphabet(event)"/></td>
+                </tr>
+            </table>            
+            <center>
+                <button name="Submit" id="Submit" value="Submit" onclick="submitForm()">Done</button>
+                <button ><a href="Author.php">Back</a></button>
+            </center>
+        </div>
+</body>
+</html>

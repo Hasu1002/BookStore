@@ -1,0 +1,66 @@
+body{
+  background: linear-gradient(to right,#e356b2,#42c4f0);
+}
+table {
+    padding: 15px;
+    width: 90%;
+    margin:auto;
+    font-size: 20px;
+    background-color: rgb(232, 232, 231);
+    border-radius: 25px;
+    width: 90%;
+    margin:auto;
+    
+  }
+  td {
+    padding: 5px;
+    text-align: center;
+  }
+  th{
+    padding: 5px;
+    text-align: center;
+  }
+  button{
+    width: 120px;
+    height: 48px;
+    margin: 15px;
+    font-size: 20px;
+    border-radius: 25px;
+    background: linear-gradient(to right,#e356b2,#42c4f0);
+  }
+  input{
+    height: 40px;
+    text-transform:uppercase;
+  }
+  select{
+    height: 50px;
+  }
+  input[type=radio] {
+    width: 25px;
+    height: 25px;
+}
+label{
+    display: inline-flex;
+  align-items: center;
+}
+  .Card{
+    background-color:  #2fc5ee;
+    width: 60%;
+    margin:auto;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 25px;
+    align-items: center;  
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,.37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255,255,255,.3);
+    border-top: 1px solid rgba(255,255,255,.3);
+  }
+  a {
+    text-decoration: none;
+    text-align: center;
+    color: #1b1a1a;
+
+  }
